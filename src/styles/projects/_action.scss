@@ -1,0 +1,10 @@
+@use '../global' as g;
+
+.Action {
+  padding: 3rem 1rem;
+  background: var(--accent-color);
+  color: var(--accent-color-cont);
+  @include g.md {
+    padding: 3rem;
+  }
+}

@@ -1,0 +1,36 @@
+@use '../global' as g;
+
+.Posts {
+  @include g.md {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }  
+}
+
+.Posts__item {
+  margin-bottom: 2rem;
+  border: 1px solid g.$accent_color;
+  @include g.md {
+    display: flex;
+    width: calc(50% - 1rem);
+  }  
+}
+
+.Posts__item__image {
+  padding: 1rem;
+  @include g.md {
+    width: 30%;
+  }
+}
+.Posts__item__content {
+  padding: 1rem;
+  @include g.md {
+    width: 70%;
+  }
+}
+
+.Posts__item__content__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}

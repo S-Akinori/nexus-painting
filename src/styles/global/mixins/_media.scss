@@ -1,0 +1,22 @@
+@use "../variables/" as v;
+
+@mixin sm {
+  @media screen and (min-width: v.$breakpoint_sm) {
+    @content
+  }
+};
+@mixin md {
+  @media screen and (min-width: v.$breakpoint_md) {
+    @content
+  }
+};
+@mixin lg {
+  @media screen and (min-width: v.$breakpoint_lg) {
+    @content
+  }
+};
+@mixin xl {
+  @media screen and (min-width: v.$breakpoint_xl) {
+    @content
+  }
+};

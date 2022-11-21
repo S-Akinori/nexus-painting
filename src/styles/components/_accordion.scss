@@ -1,0 +1,23 @@
+.Accordion__item {
+  margin-bottom: 2rem;
+}
+.Accordion__item__title {
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  color: var(--main-color-cont);
+  border-radius: .5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.Accordion__item__title.open {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.Accordion__item__content {
+  display: none;
+  padding: 1rem 2rem;
+  border: 1px solid var(--main-color);
+  border-radius: 0 0 .5rem .5rem;
+}

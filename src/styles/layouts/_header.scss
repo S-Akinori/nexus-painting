@@ -1,0 +1,9 @@
+.header {
+  position: fixed;
+  z-index: 9999;
+  padding: 1rem;
+  background: var(--base-color);
+  border-bottom: 1px solid var(--main-color);
+  min-height: 80px;
+  width: 100%;
+}

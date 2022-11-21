@@ -1,0 +1,19 @@
+@use '../global' as g;
+
+.Container {
+  padding: 3rem 1rem;
+  width: 100%;
+
+  @include g.sm {
+    max-width: g.$breakpoint_sm;
+  }
+  @include g.md {
+    max-width: g.$breakpoint_md;
+  }
+  @include g.lg {
+    max-width: g.$breakpoint_lg;
+  }
+  @include g.xl {
+    max-width: g.$breakpoint_xl;
+  }
+}

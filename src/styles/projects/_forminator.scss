@@ -1,0 +1,37 @@
+.forminator-row {
+  padding: 1rem;
+  background: var(--main-color);
+  border-radius: .5rem;
+  transition: 300ms;
+  opacity: 1;
+  height: 100%;
+}
+
+.forminator-row-last {
+  background: none;
+}
+
+.forminator-ui .forminator-row.forminator-hidden {
+  display: block !important;
+  height: 0;
+  opacity: 0;
+}
+
+.forminator-label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.forminator-checkbox.active {
+  background: var(--accent-color);
+  color: var(--accent-color-cont);
+}
+.forminator-checkbox input {
+  display: none;
+}
+.forminator-checkbox {
+  display: inline-block;
+  background: var(--accent-color-cont);
+  padding: 1rem;
+  width: calc(50% - 2rem);
+  margin: 1rem;
+}

@@ -1,0 +1,78 @@
+@use '../global' as g;
+
+.Gallery {
+  @include g.md {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Gallery__item {
+  margin-bottom: 2rem;
+  border: 1px solid var(--main-color);
+  @include g.md {
+    width: calc(33% - 1rem);
+  }
+}
+
+.Gallery__item__image {
+  position: relative;
+}
+
+.Gallery__item__image__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  z-index: 2;
+}
+.Gallery__item__image__after {
+  position: relative;
+}
+
+.Gallery__item__image__before::after,
+.Gallery__item__image__after::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 .25rem;
+  font-weight: bold;
+}
+.Gallery__item__image__before::after {
+  content: 'Before';
+  background: rgba($color: g.$accent_color_cont, $alpha: 0.9);
+  font-size: 0.85rem;
+  color: g.$accent_color;
+}
+.Gallery__item__image__after::after {
+  content: 'After';
+  background: rgba($color: g.$accent_color, $alpha: 0.9);
+  color: g.$accent_color_cont;
+}
+
+.Gallery__item__content {
+  padding: 1rem;
+}
+.Gallery__item__content__price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: g.$accent_color;
+}
+.Gallery__item__content__info {
+  display: flex;
+  justify-content: space-between;
+}
+.Gallery__item__content__info__item {
+  width: 30%;
+}
+.Gallery__item__content__info__item__title {
+  padding: 0 .25rem;
+  background: g.$accent_color;
+  color: g.$accent_color_cont;
+  font-weight: bold;
+  text-align: center;
+}
+.Gallery__item__content__info__item__content {
+  text-align: center;
+}

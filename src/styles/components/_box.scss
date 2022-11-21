@@ -1,0 +1,10 @@
+@use '../global/' as g;
+
+.Box {
+  position: relative;
+  padding: 1rem;
+  border-radius: .5rem;
+  @include g.md {
+    padding: 2rem;
+  }
+}
