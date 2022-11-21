@@ -1,7 +1,6 @@
 <?php get_header(); ?>
   <?php get_template_part('./inc/components/FV', null) ?>
   <div class="Container mx-auto">
-    <?php acf_form() ?>
     <?php get_template_part('./inc/components/Service', null) ?>
   </div>
   <div>
