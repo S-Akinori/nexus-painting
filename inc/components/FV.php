@@ -4,7 +4,7 @@
 <div>
   <div class="text-accent text-center text-xl font-bold mb-4">＼たった1分！無料でできる！／</div>
   <div class="text-center">
-    <?= do_shortcode('[button href="/" bg="accent"]簡単お見積もり[/button]') ?>
+    <?= do_shortcode('[button href="'.home_url('form').'" bg="accent"]簡単お見積もり[/button]') ?>
   </div>
 </div>
 <?php

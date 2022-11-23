@@ -1,5 +1,35 @@
 .nf-field-container {
+  display: none;
   padding: 1rem;
   background: var(--main-color);
   border-radius: .5rem;
+}
+
+input[type=checkbox].ninja-forms-field {
+  display: none;
+}
+
+.nf-field .list-checkbox-wrap .nf-field-element ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nf-field .list-checkbox-wrap .nf-field-element ul li {
+  width: calc(50% - 1rem);
+  margin-bottom: 1rem !important;
+}
+.nf-field .list-checkbox-wrap .nf-field-element li label {
+  display: block;
+  padding: 1rem;
+  margin-left: 0;
+  width: 100%;
+  background: var(--accent-color-cont);
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+.nf-field .list-checkbox-wrap .nf-field-element li label.nf-checked-label,
+.nf-field .list-checkbox-wrap .nf-field-element li label:hover {
+  background: var(--accent-color);
+  color: var(--accent-color-cont);
 }

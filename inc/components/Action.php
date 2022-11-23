@@ -1,6 +1,6 @@
 <?php
 $button = '[button href="/" bg="accent-cont"]簡単見積もりスタート[/button]';
-$balloon = '[balloon]1分で<br>無料比較[/balloon]'
+$balloon = '[balloon href="'.home_url('form').'"]1分で<br>無料比較[/balloon]'
 ?>
 
 <div class="Action">

@@ -9,7 +9,8 @@ function create_post_type() {
     'public' => true,
     'has_archive' => true,
     'menu_position' => 5,
-    'supports' => ['title', 'editor', 'author', 'thumbnail', 'excerpt']
+    'supports' => ['title', 'editor', 'author', 'thumbnail', 'excerpt'],
+    'show_in_rest' => true,
   ]);
 }
 add_action( 'init', 'create_post_type' );
