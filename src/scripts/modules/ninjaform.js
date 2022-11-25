@@ -14,9 +14,19 @@ export const ninjaForm = () => {
       const $thisFieldWrap = $this.parents('.field-wrap');
       const index = parseInt($this.parents('.nf-field-container').data('nf-field-container-index'))
       const nextIndex = index + 1;
-      if(!$thisFieldWrap.hasClass('nf-error') && $nfFieldContainers.eq(nextIndex).css('display') === 'none') {
-        $nfFieldContainers.eq(nextIndex).fadeIn();
-      }
+      console.log($this.attr('required'))
+      setTimeout(() => {
+        if(!$thisFieldWrap.hasClass('nf-error') && $nfFieldContainers.eq(nextIndex).css('display') === 'none') {
+          $nfFieldContainers.eq(nextIndex).fadeIn();
+          for(let i=nextIndex; i < $nfFields.length; i++) {
+            if($nfFieldContainers.eq(i).find('.ninja-forms-field').attr('required') === undefined) {
+              $nfFieldContainers.eq(i+1).fadeIn();
+            } else {
+              break;
+            }
+          }
+        }
+      }, 300)
     })
   })
 }
