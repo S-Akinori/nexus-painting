@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="px-6 pt-12 mx-auto container">
+<div class="pt-12 mx-auto Container">
   <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
   <div class="mb-4">
     <h1 class="text-center"><?php the_title(); ?></h1>

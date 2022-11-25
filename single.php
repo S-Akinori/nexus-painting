@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="px-6 pt-12 mx-auto container">
+<div class="pt-12 mx-auto Container">
   <div class="lg:flex">
     <div class="pb-12 mb-12 border-b border-b-accent lg:w-2/3 lg:p-4">
       <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
