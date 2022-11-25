@@ -2,9 +2,38 @@
 
 .Action {
   padding: 3rem 1rem;
-  background: var(--accent-color);
-  color: var(--accent-color-cont);
+  background: var(--main-color);
+  color: var(--main-color-cont);
   @include g.md {
     padding: 3rem;
+  }
+}
+
+.Action--md {
+  padding: 3rem 1rem;
+  @include g.md {
+    padding: 2rem;
+  }
+}
+
+.Action__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Action__title--md {
+  font-size: 1.4rem;  
+}
+
+.Action__image {
+  @include g.md {
+    padding-left: 5rem;
+  }
+}
+
+.Action__image--md {
+  @include g.md {
+    padding-left: 1rem;
   }
 }

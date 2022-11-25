@@ -1,8 +1,23 @@
 .nf-field-container {
   display: none;
+  position: relative;
   padding: 1rem;
+  margin-bottom: 5rem !important;
+  border: 1px solid var(--accent-color);
+  border-radius: .25rem;
+}
+
+.nf-field-container--before::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  width: 60%;
+  height: 40px;
   background: var(--main-color);
-  border-radius: .5rem;
 }
 
 input[type=checkbox].ninja-forms-field {
@@ -23,13 +38,37 @@ input[type=checkbox].ninja-forms-field {
   padding: 1rem;
   margin-left: 0;
   width: 100%;
-  background: var(--accent-color-cont);
+  border: 1px solid var(--accent-color);
   border-radius: .25rem;
   cursor: pointer;
   transition: 300ms;
 }
 .nf-field .list-checkbox-wrap .nf-field-element li label.nf-checked-label,
 .nf-field .list-checkbox-wrap .nf-field-element li label:hover {
+  background: var(--accent-color);
+  color: var(--accent-color-cont);
+}
+
+.nf-field ul {
+  border: none;
+}
+
+.nf-field ul li:before {
+  display: none;
+}
+
+.submit-container {
+  border: none;
+  text-align: center;
+}
+
+.submit-container .nf-field {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=button].ninja-forms-field {
+  width: 200px !important;
   background: var(--accent-color);
   color: var(--accent-color-cont);
 }

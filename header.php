@@ -21,10 +21,25 @@
 <body>
   <header class="header">
     <div class="flex justify-between items-center">
-      <div class="c-logo"><a href="<?= home_url(); ?>">塗装のプロフェッショナル</a></div>
-      <div class="flex items-center">
-        <div class="px-2"><?= do_shortcode('[button bg="accent" href="'.home_url('form').'"]簡単見積もりスタート[/button]') ?></div>
-        <div class="px-2"><a href="/">000-0000-000</a></div>
+      <div class="p-4"><a href="<?= home_url(); ?>"><?= bloginfo();?></a></div>
+      <div class="hidden md:flex items-center p-4">
+        <div class="px-2">
+          <a class="Button Button--accent !p-0 !flex items-center" href="<?= home_url('form'); ?>">
+            <span class="bg-main inline-block p-2 text-base-cont text-sm" style="border-radius: .5rem 0 0 .5rem;">無料で<br />カンタン</span>
+            <span class="p-2">見積もりスタート</span>
+          </a>
+        </div>
+        <div class="px-2">
+          <a class="font-bold text-lg" href="tel:000-0000-000">000-0000-000</a>
+          <div class="text-xs">平日10:00~19:00</div>
+        </div>
+      </div>
+      <div class="flex md:hidden shrink-0">
+        <a class="bg-accent p-2 text-accent-cont text-center font-bold" href="<?= home_url('form'); ?>">
+          <span class="text-sm">＼カンタン／</span><br>
+          お見積もり
+        </a>
+        <a class="font-bold bg-main inline-block h-full p-4" href="tel:000-0000-000"><span class="material-icons">call</span></a>
       </div>
     </div>
   </header>

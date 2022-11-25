@@ -21,6 +21,6 @@ function box($atts, $content = null) {
   ];
   $border_class = $border_classes[$border];
   $bg_class = $bg_classes[$bg];
-  return "<div class='Box bg-base $border_class $bg_class $class'>$content</div>";
+  return "<div class='Box $border_class $bg_class $class'>$content</div>";
 }
 add_shortcode('box', 'box');

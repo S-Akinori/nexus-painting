@@ -1,22 +1,26 @@
 <?php get_header(); ?>
   <?php get_template_part('./inc/components/FV', null) ?>
-  <div class="flex flex-wrap">
-    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-    <div class="md:w-1/2 p-4">
+  <div class="lg:flex">
+    <div class="pb-12 lg:w-2/3 lg:p-4 flex flex-wrap">
       <div>
+        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
         <div>
-          <a href="<?php the_permalink() ?>"><img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" width="1200" height="800" alt="<?php the_title(); ?>"></a>
+          <a class="Posts__item" href="<?php the_permalink(); ?>">
+            <div class="Posts__item__image">
+              <img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url('', 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" alt="<?php the_title() ?>">
+            </div>
+            <div class="Posts__item__content">
+              <div class="Posts__item__content__title"><?php the_title() ?></div>
+              <div class="Posts__item__content__text"><?php the_excerpt() ?></div>
+            </div>
+          </a>
         </div>
-        <div>
-          <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
-          <p><?php the_date() ?></p>
-          <p><?php echo esc_html(get_the_excerpt()); ?></p>
-        </div>
+        <?php endwhile; endif; ?>
       </div>
     </div>
-    <?php endwhile; endif; ?>
+    <div class="lg:w-1/3 lg:p-4">
+      <?php get_sidebar(); ?>
+    </div>
   </div>
-  <?php if(function_exists("pagination")) {
-      pagination();
-  } ?>
+  <?php get_template_part('./inc/components/Pagination', null) ?>
 <?php get_footer(); ?>

@@ -1,5 +1,5 @@
 <?php
-  $title = '[title]流れ[/title]';
+  $title = '[title]塗装までの流れ[/title]';
   $flows = [
     'お電話やメール、フォームよりお問い合わせ',
     '弊社担当よりおご連絡',
@@ -21,7 +21,7 @@
           [box bg="none" border="accent" class="!p-4 md:h-full"]
             <div class="flex md:block items-center">
               <div class="Flow__num text-main font-bold text-center shrink-0 px-4 md:px-0">STEP<br><span class="text-2x">'.$i.'</span></div>
-              <div class="px-4 md:px-0 font-bold text-lg">'.$flow.'</div>
+              <div class="px-4 md:px-0 font-bold">'.$flow.'</div>
             </div>
           [/box]
         </div>

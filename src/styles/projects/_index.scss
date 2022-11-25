@@ -1,8 +1,10 @@
 @use './action';
+@use './category-list';
 @use './feature';
 @use './flow';
 @use './forminator';
 @use './gallery';
 @use './ninja-form';
+@use './pagination';
 @use './posts';
 @use './top-main';

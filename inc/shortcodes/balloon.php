@@ -3,7 +3,8 @@
 function balloon($atts, $content = null) {
   extract(shortcode_atts([
     'border' => 'none',
-    'bg' => 'base'
+    'bg' => 'base',
+    'size' => 'lg'
   ], $atts));
 
   $border_classes = [
@@ -20,6 +21,6 @@ function balloon($atts, $content = null) {
   ];
   $border_class = $border_classes[$border];
   $bg_class = $bg_classes[$bg];
-  return "<div class='Balloon $border_class $bg_class'><div>$content</div></div>";
+  return "<div class='Balloon Balloon--$size $border_class $bg_class'><div>$content</div></div>";
 }
 add_shortcode('balloon', 'balloon');

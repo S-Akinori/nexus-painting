@@ -13,7 +13,7 @@
 ?>
 
 <div class="FV">
-  <div class="FV__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-top.jpg" alt="" /></div>
+  <div class="FV__image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/image-fv.png" alt="お客様に最適な塗装会社を-塗装のプロフェッショナル-" /></div>
   <div class="FV__text-container">
     <div>
       <div class="FV__text-container__title mb-4">

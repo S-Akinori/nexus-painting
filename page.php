@@ -1,17 +1,17 @@
 <?php get_header(); ?>
-<article>
-  <div class="p-6 pt-20 md:pt-12 mx-auto container">
-    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+<div class="px-6 pt-12 mx-auto container">
+  <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+  <div class="mb-4">
     <h1 class="text-center"><?php the_title(); ?></h1>
-    <?php if(get_the_category()[0]->slug !== 'customer-voice' && has_post_thumbnail()) : ?>
+    <?php if(has_post_thumbnail()) : ?>
     <div class="img-container text-center py-2">
       <img src="<?= get_the_post_thumbnail_url('', 'full') ?>" alt="<?php the_title() ?>">
     </div>
     <?php endif ; ?>
-    <div>
-      <?php the_content(); ?>
-    </div>
-    <?php endwhile; endif ?>
   </div>
-</article>
+  <article class="article">
+    <?php the_content(); ?>
+  </article>
+  <?php endwhile; endif ?>
+</div>
 <?php get_footer(); ?>

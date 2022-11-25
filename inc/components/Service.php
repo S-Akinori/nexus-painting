@@ -2,7 +2,7 @@
   $title = '[title]お客様のご自宅にあった塗装会社様をご紹介[/title]';
   $theme_url = get_template_directory_uri();
   $service1 = <<<EOL
-    [box border="accent" bg="none"]
+    [box border="main" bg="none"]
       <h3 class="text-accent text-center font-bold text-xl">通常の比較サイト</h3>
       <div class="md:flex items-center">
         <div class="md:w-1/2">お客様が問い合わせをし、地域に合わせて自動で業者を紹介するという簡易的なサービス</div>
@@ -11,8 +11,8 @@
     [/box]
   EOL;
   $service2 = <<<EOL
-    [box border="none" bg="accent"]
-      <h3 class="text-center font-bold text-xl">「塗装のプロフェッショナル」</h3>
+    [box border="none" bg="main"]
+      <h3 class="text-center font-bold text-xl text-accent">「塗装のプロフェッショナル」</h3>
       <div class="md:flex items-center">
         <div class="md:w-1/2">
           <p>弊社サービスではコンサルタントが現地調査にお伺いし、お写真、修復する必要箇所など、また、使用する塗料なども決めた上で会社様をご紹介させていただきます。ですので、従来の比較サイトのように、会社紹介のみではなく、お客様のご自宅にあった塗装会社様を紹介することができます。</p>

@@ -1,5 +1,8 @@
 @use '../global/' as g;
 
+.Feature__item:not(:last-of-type) {
+  margin-bottom: 7rem;
+}
 .Feature__num {
   position: absolute;
   top: -4rem;
