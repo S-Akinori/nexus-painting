@@ -1,6 +1,7 @@
 <?php get_header(); ?>
   <?php get_template_part('./inc/components/FV', null) ?>
   <div class="Container mx-auto">
+    <h1 class="text-center"><?= is_category() ? 'カテゴリー: ' . single_cat_title('', false) : 'ブログ' ?></h1>
     <div class="lg:flex">
       <div class="pb-12 lg:w-2/3 lg:p-4 flex flex-wrap">
         <div>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php is_home() ? bloginfo() : the_title() ?></title>
-  <meta property="og:title" content="<?php is_home() ? bloginfo() : the_title() ?>" />
-  <meta property="og:description" content="<?php is_home() ? bloginfo() : the_excerpt() ?>" />
+  <title><?php is_front_page() ? bloginfo('name') - bloginfo('description') : the_title() ?></title>
+  <meta property="og:title" content="<?php is_front_page() ? bloginfo('name') : the_title() ?>" />
+  <meta property="og:description" content="<?php is_front_page() ? bloginfo('description') : the_excerpt() ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<?php home_url(); ?>" />
   <meta property="og:image" content="<?= get_template_directory_uri(); ?>/image.png" />
