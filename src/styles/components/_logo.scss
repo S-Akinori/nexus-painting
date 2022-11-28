@@ -1,0 +1,7 @@
+@use '../global/' as g;
+.Logo {
+  width: 200px;
+  @include g.md {
+    width: 300px;
+  }
+}

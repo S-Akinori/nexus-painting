@@ -1,7 +1,7 @@
 </main>
 <footer class="footer">
   <div class="md:w-max mx-auto">
-    <div class="text-center"><?= bloginfo();?></div>
+    <div class="px-4 mx-auto Logo"><a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="<?= bloginfo(); ?>"></a></div>
     <?php wp_nav_menu(array(
       'theme_location' => 'footer',
       'menu_class' => 'footer-list',

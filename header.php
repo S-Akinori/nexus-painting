@@ -21,7 +21,7 @@
 <body>
   <header class="header">
     <div class="flex justify-between items-center">
-      <div class="p-4"><a href="<?= home_url(); ?>"><?= bloginfo();?></a></div>
+      <div class="px-4 Logo"><a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="<?= bloginfo(); ?>"></a></div>
       <div class="hidden md:flex items-center p-4">
         <div class="px-2">
           <a class="Button Button--accent !p-0 !flex items-center" href="<?= home_url('form'); ?>">
@@ -30,7 +30,7 @@
           </a>
         </div>
         <div class="px-2">
-          <a class="font-bold text-lg" href="tel:000-0000-000">000-0000-000</a>
+          <a class="font-bold text-lg flex" href="tel:072-442-2869"><span class="material-icons">call</span><span>072-442-2869</span></a>
           <div class="text-xs">平日10:00~19:00</div>
         </div>
       </div>
@@ -39,7 +39,7 @@
           <span class="text-sm">＼カンタン／</span><br>
           お見積もり
         </a>
-        <a class="font-bold bg-main inline-block h-full p-4" href="tel:000-0000-000"><span class="material-icons">call</span></a>
+        <a class="font-bold bg-main inline-block h-full p-4" href="tel:072-442-2869"><span class="material-icons">call</span></a>
       </div>
     </div>
   </header>
