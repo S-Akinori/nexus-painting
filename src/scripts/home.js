@@ -7,6 +7,6 @@ $(function() {
   const headerHeight = $('header').innerHeight();
   $('main').css('padding-top', headerHeight + 'px');
   accordion();
-  forminator();
+  // forminator();
   ninjaForm();
 })
