@@ -11,6 +11,5 @@
   <div class="text-center text-sm">&copy; 2020 <?= bloginfo();?></div>
 </footer>
 <?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/main.js"></script>
 </body>
 </html>

@@ -17,8 +17,9 @@
   <div class="FV__text-container">
     <div>
       <div class="FV__text-container__title mb-4">
-        <span class="text-accent text-shadow">お客様に最適な塗装会社を</span><br />
-        <span>塗装のプロフェッショナル</span>
+        <span class="text-accent text-shadow">お客様に最適な塗装会社を</span>
+        <div class="w-96 mx-auto"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="お客様に最適な塗装会社を-塗装のプロフェッショナル-" /></div>
+        <!-- <span>塗装のプロフェッショナル</span> -->
       </div>
       <div class="FV__text-container__action">
         <?php get_template_part('./inc/components/parts/Box', null, ['children' => $children]) ?>

@@ -14,3 +14,14 @@ function register_my_menus() {
    );
  }
 add_action( 'init', 'register_my_menus' );
+
+function my_enqueue_styles() { 
+  wp_enqueue_style( 'tw', get_template_directory_uri() . '/assets/styles/tw.css', '', '');
+  wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/styles/index.css', '', '');
+}
+function my_enqueue_scripts() { 
+  wp_enqueue_script( 'smart-script', get_template_directory_uri() . '/assets/scripts/main.js', ['jquery'], '', true );
+  // wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'my_enqueue_styles');
+add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
