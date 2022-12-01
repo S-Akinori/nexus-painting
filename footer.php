@@ -8,7 +8,7 @@
       'container' => 'nav'
     )); ?>
   </div>
-  <div class="text-center text-sm">&copy; 2020 <?= bloginfo();?></div>
+  <div class="text-center text-sm">&copy; <?= date('Y'); ?> <?= bloginfo();?></div>
 </footer>
 <?php wp_footer(); ?>
 </body>
