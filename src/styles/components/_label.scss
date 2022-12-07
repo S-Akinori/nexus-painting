@@ -1,0 +1,19 @@
+.Label {
+  position: relative;
+  background: var(--accent-color);
+  padding: .5rem 1rem;
+  color: var(--accent-color-cont);
+  margin-bottom: 2rem;
+}
+
+.Label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: -48px;
+  width: 50px;
+  aspect-ratio: 1/1;
+  background: var(--accent-color);
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}

@@ -1,6 +1,11 @@
 export const ninjaForm = () => {
   $(document).on('nfFormReady', () => {
     const $nfFieldContainers = $('.nf-field-container');
+    let formCount = $nfFieldContainers.length - 1;
+    const formCountHTML = `<div id="formCount" class="fixed bottom-0 right-0 p-4 bg-accent text-accent-cont" style="display: none">あと<span class="text-2xl font-bold">${formCount}</span>項目</div>`
+    $('body').append(formCountHTML)
+    const $formCountEl = $('#formCount')
+    $formCountEl.fadeIn();
     $nfFieldContainers.each((index, el) => {
       if(index > 0) {
         $(el).addClass('nf-field-container--before')
@@ -27,6 +32,8 @@ export const ninjaForm = () => {
                   break;
                 }
               }
+              formCount--;
+              updateFormCountText(formCount)
             }
           }, 600)
         })
@@ -46,10 +53,20 @@ export const ninjaForm = () => {
                   break;
                 }
               }
+              formCount--;
+              updateFormCountText(formCount)
             }
           }, 300)
         })
       }
     })
   })
+}
+
+const updateFormCountText = (count) => {
+  if(count > 0) {
+    $('#formCount').html(`あと<span class="text-2xl font-bold">${count}</span>項目`)
+  } else {
+    $('#formCount').fadeOut();
+  }
 }

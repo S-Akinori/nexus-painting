@@ -1,6 +1,6 @@
 <?php
 $size = $args['size'] ?? 'lg';
-$button = '[button href="'.home_url('form').'" bg="accent"]簡単見積もりスタート[/button]';
+$button = '[button href="'.home_url('form').'" bg="accent"]調査を依頼[/button]';
 $balloon = '[balloon size="'.$size.'"]1分で<br>無料比較[/balloon]'
 ?>
 

@@ -4,6 +4,7 @@
   @include g.md {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 }
@@ -13,6 +14,7 @@
   align-items: stretch;
   padding: 1rem .5rem;
   margin-bottom: 2rem;
+  height: 100%;
   box-shadow: 1px 1px 6px #ccc;
   transition: 300ms;
   @include g.md {

@@ -4,7 +4,7 @@
 <div>
   <div class="text-accent text-center text-xl font-bold mb-4">＼たった1分！無料でできる！／</div>
   <div class="text-center">
-    <?= do_shortcode('[button href="'.home_url('form').'" bg="accent"]簡単お見積もり[/button]') ?>
+    <?= do_shortcode('[button href="'.home_url('form').'" bg="accent"]調査を依頼[/button]') ?>
   </div>
 </div>
 <?php
@@ -17,6 +17,9 @@
   <div class="FV__text-container">
     <div>
       <div class="FV__text-container__title mb-4">
+        <div class="Label text-center">
+          関西限定！地域に密着
+        </div>
         <span class="text-accent text-shadow">お客様に最適な塗装会社を</span>
         <div class="w-96 mx-auto"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="お客様に最適な塗装会社を-塗装のプロフェッショナル-" /></div>
         <!-- <span>塗装のプロフェッショナル</span> -->

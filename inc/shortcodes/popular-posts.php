@@ -15,8 +15,8 @@ function popular_posts($atts) {
 ?>
 <div class="Posts <?= ($flex === '1') ? '' : '!block'?>">
   <?php foreach($popular_posts as $post): ?>
-    <div class="<?= ($flex === '1') ? 'md:w-1/2 px-4' : 'w-full'?>">
-      <a class="Posts__item " href="<?= get_the_permalink($post); ?>">
+    <div class="<?= ($flex === '1') ? 'md:w-1/2 lg:w-1/3 px-4 mb-8' : 'w-full'?>">
+      <a class="Posts__item" href="<?= get_the_permalink($post); ?>">
         <div class="Posts__item__image">
           <img src="<?= has_post_thumbnail($post) ? get_the_post_thumbnail_url($post, 'full') : get_template_directory_uri() . '/assets/images/no-image.jpg' ?>" alt="<?= get_the_title($post) ?>">
         </div>
